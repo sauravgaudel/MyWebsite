@@ -1,17 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Saurav Gaudel | Computer Engineering · AI/ML · Cybersecurity</title>
-<meta name="description" content="Portfolio of Saurav Gaudel, a Computer Engineering student from Nepal working on AI/ML, cybersecurity, networking and software development." />
-<meta name="theme-color" content="#1D4ED8" />
-<meta property="og:title" content="Saurav Gaudel — Portfolio" />
-<meta property="og:description" content="AI/ML, cybersecurity, networking and practical software projects." />
-<meta property="og:type" content="website" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231D4ED8'/><text x='16' y='22' font-size='17' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>SG</text></svg>" />
-<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saurav Gaudel — Computer Engineering Student</title>
+<meta name="description" content="Portfolio of Saurav Gaudel, a Computer Engineering student at IOE Pulchowk Campus, Nepal, interested in AI/ML, cybersecurity and networking.">
+<meta property="og:title" content="Saurav Gaudel — Portfolio">
+<meta property="og:description" content="Computer Engineering student exploring AI/ML, cybersecurity, networking and research.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home" aria-label="Saurav Gaudel, home">SG.</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span></span><span></span></button>
+    <nav id="menu" aria-label="Primary"><ul id="navlinks"></ul></nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="status"><span class="dot"></span>Currently exploring and building.</p>
+      <h1>Hi, I'm Saurav Gaudel.</h1>
+      <p class="sub">Computer Engineering Student | AI/ML Enthusiast | Technology Explorer</p>
+      <p class="lead">I'm a Computer Engineering student interested in artificial intelligence, cybersecurity, and computer networks. I enjoy exploring how technology works, building practical solutions, and continuously learning through projects and research.</p>
+      <div class="btns">
+        <a class="btn primary" id="cv" href="assets/documents/cv.pdf">View CV</a>
+        <a class="btn" href="#projects">Explore Projects</a>
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
+      <ul class="social" id="social"></ul>
+    </div>
+    <figure class="photo" aria-label="Photo placeholder"><div class="ph">Profile photo<br><small>Replace with assets/images/profile.jpg</small></div></figure>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap two">
+    <figure class="photo small"><div class="ph">Photo placeholder</div></figure>
+    <div>
+      <h2>About</h2>
+      <p>I'm studying Computer Engineering at IOE, Pulchowk Campus, Tribhuvan University. My interests lie in AI/ML, deep learning, cybersecurity, and networking, and I like turning what I learn into practical software and technical projects.</p>
+      <p>I'm also starting to explore research, particularly AI robustness and Nepali speech recognition. Most of what I know comes from experimentation, technical communities, and hands-on experience.</p>
+      <dl class="facts" id="facts"></dl>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec alt"><div class="wrap"><h2>Skills</h2><div class="skills" id="skillsList"></div></div></section>
+<section id="projects" class="sec"><div class="wrap"><h2>Featured projects</h2><div class="projects" id="projectList"></div></div></section>
+<section id="research" class="sec alt"><div class="wrap"><h2>Research</h2><div id="researchBox"></div></div></section>
+<section id="experience" class="sec"><div class="wrap"><h2>Experience &amp; activities</h2><ol class="timeline" id="timeline"></ol>
+  <h3 class="mt">Certifications &amp; achievements</h3><ul class="certs" id="certs"></ul></div></section>
+
+<section id="beyond" class="sec beyond"><div class="wrap">
+  <h2>Beyond Technology</h2><p class="muted">There's more to me than code and computers.</p>
+  <div class="interests" id="interests"></div></div></section>
+
+<section id="contact" class="sec"><div class="wrap two">
+  <div><h2>Contact</h2>
+    <ul class="clist" id="clist"></ul></div>
+  <form id="form" novalidate>
+    <label>Name<input name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required><span class="err" aria-live="polite"></span></label>
+    <label>Subject<input name="subject" required><span class="err" aria-live="polite"></span></label>
+    <label>Message<textarea name="message" rows="5" required></textarea><span class="err" aria-live="polite"></span></label>
+    <button class="btn primary" type="submit">Send Message</button>
+    <p class="note" id="formNote">This opens your email app. Nothing is stored or sent from this site.</p>
+  </form>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap foot-in">
+  <div><strong>Saurav Gaudel</strong><p class="muted">Building, learning, and exploring technology.</p></div>
+  <ul class="social" id="footSocial"></ul>
+  <ul class="fnav" id="footNav"></ul>
+</div><p class="wrap copy">&copy; <span id="year"></span> Saurav Gaudel</p></footer>
+<button class="totop" id="totop" aria-label="Back to top">&uarr;</button>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
