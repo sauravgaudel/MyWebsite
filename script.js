@@ -83,6 +83,7 @@ tabs.forEach(function (tab) {
   });
 });
 
+
 // ---------- 6. Contact form ----------
 const form = document.getElementById("form");
 const statusMessage = document.getElementById("formStatus");
@@ -93,7 +94,6 @@ function showStatus(text, type) {
   statusMessage.className = type || "";
 }
 
-// Validate all required fields
 function formIsValid() {
   let valid = true;
 
@@ -134,7 +134,6 @@ form.addEventListener("submit", async function (event) {
     return;
   }
 
-  // Spam protection
   if (form.elements._honey.value !== "") return;
 
   sendButton.disabled = true;
@@ -170,6 +169,8 @@ form.addEventListener("submit", async function (event) {
     }
 
   } catch (error) {
+    console.error("Form submission error:", error);
+
     showStatus(
       "Unable to send your message. Please try again or email " + EMAIL + ".",
       "error"
@@ -179,6 +180,7 @@ form.addEventListener("submit", async function (event) {
   sendButton.disabled = false;
   sendButton.textContent = "Send Message";
 });
+
 
 // ---------- 7. Copyright year ----------
 document.getElementById("year").textContent = new Date().getFullYear();
