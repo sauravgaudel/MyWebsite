@@ -1,90 +1,1497 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Saurav Gaudel — Computer Engineering Student</title>
-<meta name="description" content="Portfolio of Saurav Gaudel, a Computer Engineering student at IOE Pulchowk Campus, Nepal, interested in AI/ML, cybersecurity and networking.">
-<meta property="og:title" content="Saurav Gaudel — Portfolio">
-<meta property="og:description" content="Computer Engineering student exploring AI/ML, cybersecurity, networking and research.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="nav" id="nav">
-  <div class="wrap nav-in">
-    <a class="logo" href="#home" aria-label="Saurav Gaudel, home">SG.</a>
-    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span></span><span></span></button>
-    <nav id="menu" aria-label="Primary"><ul id="navlinks"></ul></nav>
-  </div>
-</header>
-
-<main id="main">
-<section id="home" class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="status"><span class="dot"></span>Currently exploring and building.</p>
-      <h1>Hi, I'm Saurav Gaudel.</h1>
-      <p class="sub">Computer Engineering Student | AI/ML Enthusiast | Technology Explorer</p>
-      <p class="lead">I'm a Computer Engineering student interested in artificial intelligence, cybersecurity, and computer networks. I enjoy exploring how technology works, building practical solutions, and continuously learning through projects and research.</p>
-      <div class="btns">
-        <a class="btn primary" id="cv" href="assets/documents/cv.pdf">View CV</a>
-        <a class="btn" href="#projects">Explore Projects</a>
-        <a class="btn" href="#contact">Get in Touch</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saurav Gaudel — Computer Engineering Student</title>
+    <meta
+      name="description"
+      content="Portfolio of Saurav Gaudel, a Computer Engineering student at IOE Pulchowk Campus, Nepal, exploring AI/ML, cybersecurity and computer networks."
+    />
+    <meta property="og:title" content="Saurav Gaudel — Portfolio" />
+    <meta
+      property="og:description"
+      content="Computer Engineering student exploring AI/ML, cybersecurity, networking and research."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#2563EB" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <!-- ===== NAVIGATION BAR (the only menu on the page) ===== -->
+    <header class="nav" id="nav">
+      <div class="wrap nav-in">
+        <a class="logo" href="#home" aria-label="Saurav Gaudel, home">
+          SG
+          <span>.</span>
+        </a>
+        <button
+          class="burger"
+          id="burger"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="menu" aria-label="Primary">
+          <ul id="navlinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#beyond">Beyond Tech</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <ul class="social" id="social"></ul>
-    </div>
-    <figure class="photo" aria-label="Photo placeholder"><div class="ph">Profile photo<br><small>Replace with assets/images/profile.jpg</small></div></figure>
-  </div>
-</section>
+    </header>
+    <main id="main">
+      <!-- ===== HOME / HERO ===== -->
+      <section id="home" class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="status">
+              <span class="dot"></span>
+              Currently exploring and building
+            </p>
+            <h1>
+              Hi, I'm
+              <span>Saurav Gaudel</span>
+            </h1>
+            <p class="sub">Computer Engineering Student </p>
+            <p class="lead">
+              I'm an undergraduate Computer Engineering student at IOE, Pulchowk Campus, Tribhuvan University, with a keen interest 
+              in Artificial Intelligence, Machine Learning, Computer Networks and Cybersecurity.
+            </p>
+            <div class="btns">
+              <a class="btn solid" id="cv" href="assets/documents/cv.pdf">
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M16 13H8M16 17H8"></path>
+                </svg>
+                View CV
+              </a>
+              <a class="btn line" href="#portfolio">Explore Portfolio</a>
+              <a class="btn line" href="#contact">Contact Me</a>
+            </div>
+            <ul class="social" id="social">
+              <!-- GitHub -->
+              <li>
+                <a href="https://github.com/sauravgaudel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.61 5.25-5.1 5.52.4.35.76 1.03.76 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9z"></path>
+                  </svg>
+                </a>
+              </li>
 
-<section id="about" class="sec">
-  <div class="wrap two">
-    <figure class="photo small"><div class="ph">Photo placeholder</div></figure>
+              <!-- LinkedIn -->
+              <li>
+                <a href="https://www.linkedin.com/in/sauravgaudel41/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52zM8 18H5V9h3v9zM6.5 7.75a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM19 18h-3v-4.5c0-1.07-.02-2.45-1.5-2.45-1.5 0-1.75 1.17-1.75 2.37V18h-3V9h2.88v1.23h.04A3.16 3.16 0 0 1 15.5 8.5c3 0 3.5 1.97 3.5 4.53V18z"></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Facebook -->
+              <li>
+                <a href="https://www.facebook.com/saurav.gaudel.54" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.2V13H10v8h3.5z"></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Instagram -->
+              <li>
+                <a href="https://www.instagram.com/saurav.gaudel/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle cx="18" cy="6" r="0.8" fill="currentColor"></circle>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- X -->
+              <li>
+                <a href="https://x.com/sauravgaudel" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.4l7.3-8.4L1.8 2h6.5l4.4 6.8L18.9 2zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20z"></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Email -->
+              <li>
+                <a href="mailto:sauravgaudel064@gmail.com" aria-label="Email">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <figure class="frame">
+            <div class="ph">
+              <img src="sg.png" alt="Saurav Gaudel">
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT + EDUCATION ===== -->
+      <section id="about" class="sec">
+        <div class="wrap">
+          <p class="eyebrow">01 · About</p>
+          <h2>About me</h2>
+          <div class="about-text">
+            <p>
+                I'm currently pursuing a Bachelor's degree in Computer Engineering at the Institute of Engineering (IOE), Pulchowk Campus, 
+                Tribhuvan University.
+            </p>
+
+            <p>
+                My academic interests include Artificial Intelligence, Machine Learning, Computer Networks and Cybersecurity.
+                I also enjoy mathematics, particularly calculus, linear algebra, and statistics. I'm curious about how things work and enjoy 
+                learning about different areas of computer science and technology.
+            </p>
+
+            <p>
+                Beyond academics and technology, I enjoy listening to music, singing, watching and playing cricket and football, and keeping up
+                with political affairs and current events. I like exploring different topics, learning new things, and staying curious 
+                about the world around me.
+            </p>
+          </div>
+          <h3 class="sub-h">Education</h3>
+          <ol class="edu" id="eduList">
+            <li class="reveal">
+              <span class="node">
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </span>
+              <div>
+                <span class="now">Fifth Semester · Current</span>
+                <h3>Bachelor of Engineering in Computer Engineering</h3>
+                <div class="meta">
+                  <span>
+                    Institution:
+                    <b>IOE, Pulchowk Campus</b>
+                  </span>
+                  <span>
+                    University:
+                    <b>Tribhuvan University</b>
+                  </span>
+                  <span>
+                    Location:
+                    <b>Nepal</b>
+                  </span>
+                </div>
+              </div>
+              <div class="score-n">
+                <!-- <strong>3.94</strong>
+                <span>CGPA(till now)</span> -->
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="node">
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </span>
+              <div>
+                <h3>Higher Secondary Education (+2)</h3>
+                <div class="meta">
+                  <span>
+                    School:
+                    <span class="ph-txt">Kalika Manavgyan Secondary School</span>
+                  </span>
+                  <span>
+                    Stream:
+                    <span class="ph-txt">Computer Engineering</span>
+                  </span>
+                  <span>
+                    Dates:
+                    <span class="ph-txt">2022-2024</span>
+                  </span>
+                </div>
+              </div>
+              <div class="score-n">
+                <strong>3.93</strong>
+                <span>GPA</span>
+              </div>
+              
+            </li>
+            <li class="reveal">
+              <span class="node">
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </span>
+              <div>
+                <h3>Secondary Education (SEE)</h3>
+                <div class="meta">
+                  <span>
+                    School:
+                    <span class="ph-txt">Shree Bhanubhakta Acharya Secondary School</span>
+                  </span>
+                  <!-- <span>
+                    Stream:
+                    <span class="ph-txt">Computer Engineering</span>
+                  </span> -->
+                  <!-- <span>
+                    Dates:
+                    <span class="ph-txt">2024</span>
+                  </span> -->
+                </div>
+              </div>
+              <div class="score-n">
+                <strong>3.92</strong>
+                <span>GPA</span>
+              </div>
+              
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS
+     To add a skill, copy one <li class="tech"> block and change the logo link and name.
+     Logos come from the Devicon library (https://devicon.dev). Skills without a logo use a plain text tile. ===== -->
+      <section id="skills" class="sec">
+        <div class="wrap">
+          <p class="eyebrow">02 · Skills</p>
+          <h2>Tools &amp; areas of familiarity</h2>
+          <div class="skills" id="skillsList">
+            <div class="cat reveal">
+              <h3>Programming Languages</h3>
+              <ul class="logos">
+                <li class="tech" title="Python">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg"
+                      alt="Python"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Python</span>
+                </li>
+                <li class="tech" title="C++">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg"
+                      alt="C++"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>C++</span>
+                </li>
+                <li class="tech" title="C">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg"
+                      alt="C"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>C</span>
+                </li>
+                <li class="tech" title="JavaScript">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg"
+                      alt="JavaScript"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>JavaScript</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cat reveal">
+              <h3>AI and Machine Learning</h3>
+              <ul class="logos">
+                <li class="tech" title="NumPy">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/numpy/numpy-original.svg"
+                      alt="NumPy"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>NumPy</span>
+                </li>
+                <li class="tech" title="Pandas">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pandas/pandas-original.svg"
+                      alt="Pandas"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Pandas</span>
+                </li>
+                <li class="tech" title="Scikit-learn">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/scikitlearn/scikitlearn-original.svg"
+                      alt="Scikit-learn"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Scikit-learn</span>
+                </li>
+                
+                <!-- <li class="tech" title="XGBoost">
+                  <span class="tile">
+                    <img src="https://cdn.simpleicons.org/xgboost" alt="XGBoost" loading="lazy" />
+                  </span>
+                  <span>XGBoost</span>
+                </li>
+                <li class="tech" title="LightGBM">
+                  <span class="tile mono">LGBM</span>
+                  <span>LightGBM</span>
+                </li> -->
+                <li class="tech" title="Deep Learning">
+                  <span class="tile mono">DL</span>
+                  <span>Deep Learning</span>
+                </li>
+                <li class="tech" title="TensorFlow">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tensorflow/tensorflow-original.svg"
+                      alt="TensorFlow"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>TensorFlow</span>
+                </li>
+                <li class="tech" title="PyTorch">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytorch/pytorch-original.svg"
+                      alt="PyTorch"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>PyTorch</span>
+                </li>
+                <!-- <li class="tech" title="CNN">
+                  <span class="tile mono">CNN</span>
+                  <span>CNN</span>
+                </li> -->
+                <li class="tech" title="Adversarial Machine Learning">
+                  <span class="tile mono">ADV</span>
+                  <span>Adversarial Machine Learning</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cat reveal">
+              <h3>Web Development and Backend</h3>
+              <ul class="logos">
+                <li class="tech" title="HTML5">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg"
+                      alt="HTML5"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>HTML5</span>
+                </li>
+                <li class="tech" title="CSS3">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg"
+                      alt="CSS3"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>CSS3</span>
+                </li>
+                <li class="tech" title="JavaScript">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg"
+                      alt="JavaScript"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>JavaScript</span>
+                </li>
+                <!-- <li class="tech" title="React">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg"
+                      alt="React"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>React</span>
+                </li> -->
+                <li class="tech" title="FastAPI">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/fastapi/fastapi-original.svg"
+                      alt="FastAPI"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>FastAPI</span>
+                </li>
+                <li class="tech" title="REST APIs">
+                  <span class="tile mono">API</span>
+                  <span>REST APIs</span>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="cat reveal">
+              <h3>Database</h3>
+              <ul class="logos">
+                <li class="tech" title="MySQL">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg"
+                      alt="MySQL"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>MySQL</span>
+                </li>
+                <li class="tech" title="SQL">
+                  <span class="tile mono">SQL</span>
+                  <span>SQL</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cat reveal">
+              <h3>Computer Networking</h3>
+              <ul class="logos">
+                <li class="tech" title="DNS">
+                  <span class="tile mono">DNS</span>
+                  <span>DNS</span>
+                </li>
+                <li class="tech" title="OSPF">
+                  <span class="tile mono">OSPF</span>
+                  <span>OSPF</span>
+                </li>
+                <li class="tech" title="IPv4 / IPv6">
+                  <span class="tile mono">IP</span>
+                  <span>IPv4 / IPv6</span>
+                </li>
+                <li class="tech" title="VLAN">
+                  <span class="tile mono">VLAN</span>
+                  <span>VLAN</span>
+                </li>
+                <li class="tech" title="Routing and Switching">
+                  <span class="tile mono">R/S</span>
+                  <span>Routing and Switching</span>
+                </li>
+                <li class="tech" title="MQTT">
+                  <span class="tile">
+                    <img src="https://cdn.simpleicons.org/mqtt" alt="MQTT" loading="lazy" />
+                  </span>
+                  <span>MQTT</span>
+                </li>
+              </ul>
+            </div> -->
+            <!-- <div class="cat reveal">
+              <h3>Operating Systems and Cybersecurity</h3>
+              <ul class="logos">
+                <li class="tech" title="Linux">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg"
+                      alt="Linux"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Linux</span>
+                </li>
+                <li class="tech" title="Ubuntu">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/ubuntu/ubuntu-original.svg"
+                      alt="Ubuntu"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Ubuntu</span>
+                </li>
+                <li class="tech" title="Windows">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/windows8/windows8-original.svg"
+                      alt="Windows"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Windows</span>
+                </li>
+                <li class="tech" title="WSL">
+                  <span class="tile mono">WSL</span>
+                  <span>WSL</span>
+                </li>
+                <li class="tech" title="Network Security Fundamentals">
+                  <span class="tile mono">SEC</span>
+                  <span>Network Security Fundamentals</span>
+                </li>
+              </ul>
+            </div> -->
+            <div class="cat reveal">
+              <h3>Tools and Research</h3>
+              <ul class="logos">
+                <li class="tech" title="Git">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg"
+                      alt="Git"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Git</span>
+                </li>
+                <li class="tech" title="GitHub">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>GitHub</span>
+                </li>
+                <li class="tech" title="VS Code">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg"
+                      alt="VS Code"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>VS Code</span>
+                </li>
+                <li class="tech" title="Jupyter Notebook">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jupyter/jupyter-original.svg"
+                      alt="Jupyter Notebook"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Jupyter Notebook</span>
+                </li>
+                <!-- <li class="tech" title="Google Colab">
+                  <span class="tile">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/googlecolab/googlecolab-original.svg"
+                      alt="Google Colab"
+                      loading="lazy"
+                    />
+                  </span>
+                  <span>Google Colab</span>
+                </li>
+                <li class="tech" title="NeMo">
+                  <span class="tile mono">NeMo</span>
+                  <span>NeMo</span>
+                </li>
+                <li class="tech" title="Torchaudio">
+                  <span class="tile mono">TA</span>
+                  <span>Torchaudio</span>
+                </li>
+                <li class="tech" title="JiWER">
+                  <span class="tile mono">JiWER</span>
+                  <span>JiWER</span>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PORTFOLIO (two tabs: Projects and Research)
+     To add a project, copy one <article class="proj"> block. Put your repository link in the GitHub button href. ===== -->
+      <section id="portfolio" class="sec">
+        <div class="wrap">
+          <p class="eyebrow">03 · Portfolio</p>
+          <h2>Selected work</h2>
+          <div class="tabs" role="tablist" aria-label="Portfolio categories" id="tabs">
+            <button
+              class="tab"
+              role="tab"
+              aria-selected="true"
+              data-tab="projects"
+              id="tab-projects"
+              aria-controls="panel-projects"
+            >
+              Projects
+            </button>
+            <button
+              class="tab"
+              role="tab"
+              aria-selected="false"
+              data-tab="research"
+              id="tab-research"
+              aria-controls="panel-research"
+            >
+              Research
+            </button>
+          </div>
+          <div id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+            <div class="projects">
+              <article class="proj reveal">
+                <div class="pvw">
+                  <div class="pv pv-ipl">
+                    <div class="sb-h">
+                      <span>MATCH CENTRE</span>
+                      <span>Win probability</span>
+                    </div>
+                    <div class="sb-row">
+                      <i>A</i>
+                      <b>Team A</b>
+                      <em>168/5</em>
+                      <small>20.0 ov</small>
+                    </div>
+                    <div class="sb-row live">
+                      <i>B</i>
+                      <b>Team B</b>
+                      <em>121/3</em>
+                      <small>14.2 ov · target 169</small>
+                    </div>
+                    <div class="wp">
+                      <span style="width: 38%">B 38%</span>
+                      <span>A 62%</span>
+                    </div>
+                    <span class="pv-tag">Illustration</span>
+                  </div>
+                </div>
+                <div class="pb">
+                  <h3>IPL Win Probability Predictor</h3>
+                  <p>
+                    A machine learning application that predicts the winning probability of IPL teams based on
+                    match conditions.
+                  </p>
+                  <ul class="tags">
+                    <li>
+                      <img
+                        class="tl"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg"
+                        alt="Python"
+                        loading="lazy"
+                      />
+                      Python
+                    </li>
+                    <li>
+                      <img
+                        class="tl"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/scikitlearn/scikitlearn-original.svg"
+                        alt="Scikit-learn"
+                        loading="lazy"
+                      />
+                      Scikit-learn
+                    </li>
+                    <li>
+                      <img
+                        class="tl"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pandas/pandas-original.svg"
+                        alt="Pandas"
+                        loading="lazy"
+                      />
+                      Pandas
+                    </li>
+                  </ul>
+                  <div class="links">
+                    <a
+                      class="btn solid"
+                      href="https://github.com/sauravgaudel/IPL_Win_Probability_Predictor"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        class="ic"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                      GitHub profile
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="proj reveal">
+                <div class="pvw">
+                  <div class="pv pv-net">
+                    <svg viewBox="0 0 320 200" aria-label="Network topology illustration">
+                      <g stroke="#93C5FD" stroke-width="2">
+                        <path
+                          d="M160 40L70 100M160 40L250 100M70 100L250 100M70 100L40 160M70 100L100 160M250 100L220 160M250 100L282 160"
+                        ></path>
+                      </g>
+                      <path
+                        class="flow"
+                        d="M40 160L70 100L250 100L282 160"
+                        fill="none"
+                        stroke="#2563EB"
+                        stroke-width="3"
+                        stroke-dasharray="6 6"
+                      ></path>
+                      <g>
+                        <rect x="142" y="26" width="36" height="28" rx="4" fill="#2563EB"></rect>
+                        <path d="M151 40h18M164 35l5 5-5 5" stroke="#fff" stroke-width="2" fill="none"></path>
+                      </g>
+                      <g>
+                        <rect x="52" y="86" width="36" height="28" rx="4" fill="#2563EB"></rect>
+                        <path d="M61 100h18M74 95l5 5-5 5" stroke="#fff" stroke-width="2" fill="none"></path>
+                      </g>
+                      <g>
+                        <rect x="232" y="86" width="36" height="28" rx="4" fill="#2563EB"></rect>
+                        <path
+                          d="M241 100h18M254 95l5 5-5 5"
+                          stroke="#fff"
+                          stroke-width="2"
+                          fill="none"
+                        ></path>
+                      </g>
+                      <g>
+                        <rect
+                          x="25"
+                          y="150"
+                          width="30"
+                          height="20"
+                          rx="3"
+                          fill="#fff"
+                          stroke="#102A56"
+                          stroke-width="2"
+                        ></rect>
+                        <path d="M32 176h16" stroke="#102A56" stroke-width="2"></path>
+                      </g>
+                      <g>
+                        <rect
+                          x="85"
+                          y="150"
+                          width="30"
+                          height="20"
+                          rx="3"
+                          fill="#fff"
+                          stroke="#102A56"
+                          stroke-width="2"
+                        ></rect>
+                        <path d="M92 176h16" stroke="#102A56" stroke-width="2"></path>
+                      </g>
+                      <g>
+                        <rect
+                          x="205"
+                          y="150"
+                          width="30"
+                          height="20"
+                          rx="3"
+                          fill="#fff"
+                          stroke="#102A56"
+                          stroke-width="2"
+                        ></rect>
+                        <path d="M212 176h16" stroke="#102A56" stroke-width="2"></path>
+                      </g>
+                      <g>
+                        <rect
+                          x="267"
+                          y="150"
+                          width="30"
+                          height="20"
+                          rx="3"
+                          fill="#fff"
+                          stroke="#102A56"
+                          stroke-width="2"
+                        ></rect>
+                        <path d="M274 176h16" stroke="#102A56" stroke-width="2"></path>
+                      </g>
+                      <text
+                        x="160"
+                        y="22"
+                        text-anchor="middle"
+                        font-size="10"
+                        fill="#102A56"
+                        font-weight="600"
+                      >
+                        R1
+                      </text>
+                    </svg>
+                    <span class="pv-tag">Illustration</span>
+                  </div>
+                </div>
+                <div class="pb">
+                  <h3>Router Simulator</h3>
+                  <p>
+                    A project demonstrating routing algorithms and computer networking concepts through
+                    simulation.
+                  </p>
+                  <ul class="tags">
+                    <li>OSPF</li>
+                    <li>Dijkstra's Algorithms</li>
+                    <li>FastApi</li>
+                  </ul>
+                  <div class="links">
+                    <a
+                      class="btn solid"
+                      href="https://github.com/sauravgaudel/Routing-Simulator"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        class="ic"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                      GitHub profile
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <!-- <article class="proj reveal">
+                <div class="pvw">
+                  <div class="pv pv-cnn">
+                    <div class="win">
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <span>classifier</span>
+                    </div>
+                    <div class="cnn-body">
+                      <figure>
+                        <svg viewBox="0 0 120 90" aria-hidden="true">
+                          <rect width="120" height="90" fill="#BFDBFE"></rect>
+                          <circle cx="92" cy="22" r="11" fill="#FBBF24"></circle>
+                          <path d="M0 90V62l30-24 28 26 22-16 40 30v12z" fill="#2563EB"></path>
+                          <path d="M0 90V74l36-14 40 14 44-8v24z" fill="#102A56"></path>
+                        </svg>
+                        <figcaption>sample image</figcaption>
+                      </figure>
+                      <div class="maps">
+                        <b style="width: 34px; height: 48px; opacity: 1"></b>
+                        <b style="width: 26px; height: 40px; opacity: 0.78"></b>
+                        <b style="width: 18px; height: 32px; opacity: 0.56"></b>
+                      </div>
+                      <div class="pred">
+                        <small>Predicted class</small>
+                        <strong>Class A</strong>
+                        <p>
+                          <span>A</span>
+                          <u><s style="width: 90%"></s></u>
+                        </p>
+                        <p>
+                          <span>B</span>
+                          <u><s style="width: 7%"></s></u>
+                        </p>
+                        <p>
+                          <span>C</span>
+                          <u><s style="width: 3%"></s></u>
+                        </p>
+                      </div>
+                    </div>
+                    <span class="pv-tag">Illustration</span>
+                  </div>
+                </div>
+                <div class="pb">
+                  <h3>Image Classifier Using CNN</h3>
+                  <p>An image classification project using a Convolutional Neural Network.</p>
+                  <ul class="tags">
+                    <li>
+                      <img
+                        class="tl"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg"
+                        alt="Python"
+                        loading="lazy"
+                      />
+                      Python
+                    </li>
+                    <li>CNN</li>
+                  </ul>
+                  <div class="links">
+                    <a
+                      class="btn solid"
+                      href="https://github.com/sauravgaudel"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        class="ic"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                      GitHub profile
+                    </a>
+                  </div>
+                </div>
+              </article> -->
+              <article class="proj reveal">
+                <div class="pvw">
+                  <div class="pv pv-score">
+                    <div class="ps-h">
+                      <small>Predicted final score</small>
+                      <strong>≈ 178</strong>
+                    </div>
+                    <div class="ov">
+                      <b class="" style="height: 49px"></b>
+                      <b class="" style="height: 63px"></b>
+                      <b class="" style="height: 42px"></b>
+                      <b class="" style="height: 77px"></b>
+                      <b class="" style="height: 56px"></b>
+                      <b class="" style="height: 70px"></b>
+                      <b class="" style="height: 63px"></b>
+                      <b class="" style="height: 49px"></b>
+                      <b class="fc" style="height: 84px"></b>
+                      <b class="fc" style="height: 56px"></b>
+                      <b class="fc" style="height: 63px"></b>
+                      <b class="fc" style="height: 70px"></b>
+                    </div>
+                    <div class="st">
+                      <span>
+                        Overs
+                        <b>12.0</b>
+                      </span>
+                      <span>
+                        Wickets
+                        <b>3</b>
+                      </span>
+                      <span>
+                        Run rate
+                        <b>8.4</b>
+                      </span>
+                    </div>
+                    <span class="pv-tag">Illustration</span>
+                  </div>
+                </div>
+                <div class="pb">
+                  <h3>Cricket Score Prediction System</h3>
+                  <p>
+                    A machine learning project that predicts cricket scores using match-related information.
+                  </p>
+                  <ul class="tags">
+                    <li>
+                      <img
+                        class="tl"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg"
+                        alt="Python"
+                        loading="lazy"
+                      />
+                      Python
+                    </li>
+                    <li>
+                      <img
+                        class="tl"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/scikitlearn/scikitlearn-original.svg"
+                        alt="Scikit-learn"
+                        loading="lazy"
+                      />
+                      Scikit-learn
+                    </li>
+                    <li>
+                      <img
+                        class="tl"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/numpy/numpy-original.svg"
+                        alt="NumPy"
+                        loading="lazy"
+                      />
+                      NumPy
+                    </li>
+                  </ul>
+                  <div class="links">
+                    <a
+                      class="btn solid"
+                      href="https://github.com/sauravgaudel/T20I_Score_Predictor"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        class="ic"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                      GitHub profile
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="proj reveal">
+                <div class="pvw">
+                  <div class="pv pv-water">
+                    <svg
+                      viewBox="0 0 320 200"
+                      preserveAspectRatio="xMidYMid slice"
+                      aria-label="Water waves and ripples illustration"
+                    >
+                      <rect width="320" height="200" fill="#DBEAFE"></rect>
+                      <g class="rip" fill="none" stroke="#fff" stroke-width="2">
+                        <ellipse cx="210" cy="82" rx="14" ry="5"></ellipse>
+                        <ellipse cx="210" cy="82" rx="14" ry="5"></ellipse>
+                        <ellipse cx="210" cy="82" rx="14" ry="5"></ellipse>
+                      </g>
+                      <g class="wv">
+                        <path
+                          d="M-40 110Q0 90 40 110T120 110T200 110T280 110T360 110V200H-40Z"
+                          fill="#93C5FD"
+                        ></path>
+                      </g>
+                      <g class="wv w2">
+                        <path
+                          d="M-40 138Q0 118 40 138T120 138T200 138T280 138T360 138V200H-40Z"
+                          fill="#2563EB"
+                        ></path>
+                      </g>
+                      <g class="wv w3">
+                        <path
+                          d="M-40 168Q0 150 40 168T120 168T200 168T280 168T360 168V200H-40Z"
+                          fill="#102A56"
+                        ></path>
+                      </g>
+                    </svg>
+                    <span class="pv-tag">Illustration</span>
+                  </div>
+                </div>
+                <div class="pb">
+                  <h3>Realistic Water Behaviour — Waves and Ripples</h3>
+                  <p>A computer graphics project simulating realistic water movement, waves, and ripples.</p>
+                  <ul class="tags">
+                    <li>Computer Graphics</li>
+                    <li>Simulation</li>
+                  </ul>
+                  <div class="links">
+                    <a
+                      class="btn solid"
+                      href="https://github.com/sauravgaudel/Simulating-Realistic-Water-Behaviour-Waves-and-Ripples"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <svg
+                        class="ic"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                      </svg>
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div id="panel-research" role="tabpanel" aria-labelledby="tab-research" hidden="">
+            <article class="research">
+              <h3> Adversarial Attack on Automatic Speech Recognition</h3>
+              <p>
+                An ongoing study investigating the robustness of Automatic Speech Recognition systems
+                against adversarial attack.
+              </p>
+              <dl>
+                <div>
+                  <dt>Research area</dt>
+                  <dd>Adversarial Machine Learning</dd>
+                </div>
+                <div>
+                  <dt>Domain</dt>
+                  <dd>Automatic Speech Recognition</dd>
+                </div>
+                <div>
+                  <dt>Method</dt>
+                  <dd>..</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Ongoing</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    <!-- ===== BEYOND TECH ===== -->
+<section id="beyond" class="sec">
+  <div class="wrap bt">
     <div>
-      <h2>About</h2>
-      <p>I'm studying Computer Engineering at IOE, Pulchowk Campus, Tribhuvan University. My interests lie in AI/ML, deep learning, cybersecurity, and networking, and I like turning what I learn into practical software and technical projects.</p>
-      <p>I'm also starting to explore research, particularly AI robustness and Nepali speech recognition. Most of what I know comes from experimentation, technical communities, and hands-on experience.</p>
-      <dl class="facts" id="facts"></dl>
+      <p class="eyebrow">04 · Beyond Tech</p>
+      <h2>Beyond code</h2>
+      <p class="muted">A few things I enjoy beyond technology.</p>
+      <p class="score">Thala for a reason! 🏏</p>
+    </div>
+
+    <div class="interests">
+
+      <div class="int reveal">
+        <h3>Music &amp; Singing</h3>
+        <p>I enjoy singing and listening to music.</p>
+      </div>
+
+      <div class="int reveal">
+        <h3>Cricket</h3>
+        <p>I enjoy playing and watching cricket.</p>
+      </div>
+
+      <div class="int reveal">
+        <h3>Football</h3>
+        <p>I enjoy playing and watching football.</p>
+      </div>
+
+      <div class="int reveal">
+        <h3>Politics</h3>
+        <p>I enjoy following current affairs and learning about political issues and developments.</p>
+      </div>
+
+      <!-- <div class="int reveal">
+        <h3>Exploring &amp; Learning</h3>
+        <p>I enjoy exploring new technologies and learning new things.</p>
+      </div> -->
+
     </div>
   </div>
 </section>
 
-<section id="skills" class="sec alt"><div class="wrap"><h2>Skills</h2><div class="skills" id="skillsList"></div></div></section>
-<section id="projects" class="sec"><div class="wrap"><h2>Featured projects</h2><div class="projects" id="projectList"></div></div></section>
-<section id="research" class="sec alt"><div class="wrap"><h2>Research</h2><div id="researchBox"></div></div></section>
-<section id="experience" class="sec"><div class="wrap"><h2>Experience &amp; activities</h2><ol class="timeline" id="timeline"></ol>
-  <h3 class="mt">Certifications &amp; achievements</h3><ul class="certs" id="certs"></ul></div></section>
+      <!-- ===== CONTACT (form posts to FormSubmit; script.js checks the fields first) ===== -->
+      <section id="contact" class="sec">
+        <div class="wrap contact-grid">
+          <div>
+            <p class="eyebrow">05 · Contact</p>
+            <h2>Get in touch</h2>
+            <p class="muted">
+              Questions, research ideas, or opportunities — send a message and it will arrive in my inbox.
+            </p>
+            <ul class="clist" id="clist">
+              <li>
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:sauravgaudel064@gmail.com">sauravgaudel064@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+                <div>
+                  <span>GitHub</span>
+                  <a href="https://github.com/sauravgaudel" target="_blank" rel="noopener">
+                    github.com/sauravgaudel
+                  </a>
+                </div>
+              </li>
+              <li>
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <div>
+                  <span>LinkedIn</span>
+                  <a href="https://linkedin.com/sauravgaudel41" target="_blank" rel="noopener">
+                    https://linkedin.com/sauravgaudel41
+                  </a>
+                </div>
+              </li>
+              <li>
+                <svg
+                  class="ic"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <span>Location</span>
+                  Nepal
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form
+            id="form"
+            action="https://formsubmit.co/sauravgaudel064@gmail.com"
+            method="POST"
+            novalidate=""
+          >
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+              style="display: none"
+              aria-hidden="true"
+            />
+            <label for="name">
+              Name
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+                required=""
+              />
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label for="email">
+              Email
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required=""
+              />
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label for="subject">
+              Subject
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" required="" />
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <label for="message">
+              Message
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message"
+                required=""
+              ></textarea>
+              <span class="err" aria-live="polite"></span>
+            </label>
+            <button class="btn solid" type="submit">Send Message</button>
+            <p id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ===== FOOTER ===== -->
+    <footer class="foot">
+      <div class="wrap foot-in">
+        <div>
+          <strong>Saurav Gaudel</strong>
+          <p>Building, learning, and exploring technology.</p>
+        </div>
+        
+        <ul class="social" id="footSocial">
+          <!-- GitHub -->
+          <li>
+            <a href="https://github.com/sauravgaudel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.11-1.45 3.05-1.15 3.05-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.61 5.25-5.1 5.52.4.35.76 1.03.76 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9z"></path>
+              </svg>
+            </a>
+          </li>
 
-<section id="beyond" class="sec beyond"><div class="wrap">
-  <h2>Beyond Technology</h2><p class="muted">There's more to me than code and computers.</p>
-  <div class="interests" id="interests"></div></div></section>
+          <!-- LinkedIn -->
+          <li>
+            <a href="https://www.linkedin.com/in/sauravgaudel41/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52zM8 18H5V9h3v9zM6.5 7.75a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM19 18h-3v-4.5c0-1.07-.02-2.45-1.5-2.45-1.5 0-1.75 1.17-1.75 2.37V18h-3V9h2.88v1.23h.04A3.16 3.16 0 0 1 15.5 8.5c3 0 3.5 1.97 3.5 4.53V18z"></path>
+              </svg>
+            </a>
+          </li>
 
-<section id="contact" class="sec"><div class="wrap two">
-  <div><h2>Contact</h2>
-    <ul class="clist" id="clist"></ul></div>
-  <form id="form" novalidate>
-    <label>Name<input name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></label>
-    <label>Email<input name="email" type="email" autocomplete="email" required><span class="err" aria-live="polite"></span></label>
-    <label>Subject<input name="subject" required><span class="err" aria-live="polite"></span></label>
-    <label>Message<textarea name="message" rows="5" required></textarea><span class="err" aria-live="polite"></span></label>
-    <button class="btn primary" type="submit">Send Message</button>
-    <p class="note" id="formNote">This opens your email app. Nothing is stored or sent from this site.</p>
-  </form>
-</div></section>
-</main>
+          <!-- Facebook -->
+          <li>
+            <a href="https://www.facebook.com/saurav.gaudel.54" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.2V13H10v8h3.5z"></path>
+              </svg>
+            </a>
+          </li>
 
-<footer class="foot"><div class="wrap foot-in">
-  <div><strong>Saurav Gaudel</strong><p class="muted">Building, learning, and exploring technology.</p></div>
-  <ul class="social" id="footSocial"></ul>
-  <ul class="fnav" id="footNav"></ul>
-</div><p class="wrap copy">&copy; <span id="year"></span> Saurav Gaudel</p></footer>
-<button class="totop" id="totop" aria-label="Back to top">&uarr;</button>
-<script src="js/data.js"></script>
-<script src="js/main.js"></script>
-</body>
+          <!-- Instagram -->
+          <li>
+            <a href="https://www.instagram.com/saurav.gaudel/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="18" cy="6" r="0.8" fill="currentColor"></circle>
+              </svg>
+            </a>
+          </li>
+
+          <!-- X -->
+          <li>
+            <a href="https://x.com/sauravgaudel" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.4l7.3-8.4L1.8 2h6.5l4.4 6.8L18.9 2zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20z"></path>
+              </svg>
+            </a>
+          </li>
+
+          <!-- Email -->
+          <li>
+            <a href="mailto:sauravgaudel064@gmail.com" aria-label="Email">
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="wrap copy">
+        ©
+        <span id="year">2026</span>
+        Saurav Gaudel
+      </p>
+    </footer>
+    <button class="totop" id="totop" aria-label="Back to top">
+      <svg
+        class="ic"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m5 12 7-7 7 7M12 19V5"></path>
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
 </html>
