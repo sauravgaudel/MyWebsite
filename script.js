@@ -84,7 +84,8 @@ tabs.forEach(function (tab) {
 });
 
 
-// ---------- 6. Contact form ----------
+
+ // ---------- 6. Contact form ----------
 const form = document.getElementById("form");
 const statusMessage = document.getElementById("formStatus");
 const sendButton = form.querySelector('button[type="submit"]');
@@ -94,6 +95,7 @@ function showStatus(text, type) {
   statusMessage.className = type || "";
 }
 
+// Validate form fields
 function formIsValid() {
   let valid = true;
 
@@ -126,6 +128,7 @@ function formIsValid() {
   return valid;
 }
 
+// Submit form using FormSubmit
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
@@ -134,7 +137,10 @@ form.addEventListener("submit", async function (event) {
     return;
   }
 
-  if (form.elements._honey.value !== "") return;
+  // Spam protection
+  if (form.elements._honey && form.elements._honey.value !== "") {
+    return;
+  }
 
   sendButton.disabled = true;
   sendButton.textContent = "Sending...";
@@ -147,7 +153,7 @@ form.addEventListener("submit", async function (event) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json"
+          "Accept": "application/json"
         },
         body: JSON.stringify(
           Object.fromEntries(new FormData(form))
@@ -157,16 +163,16 @@ form.addEventListener("submit", async function (event) {
 
     const result = await response.json();
 
-    if (response.ok && String(result.success) === "true") {
-      showStatus("Message sent successfully. Thank you!", "ok");
-      form.reset();
-
-      form.querySelectorAll("[aria-invalid]").forEach(function (field) {
-        field.removeAttribute("aria-invalid");
-      });
-    } else {
+    if (!response.ok || String(result.success) !== "true") {
       throw new Error(result.message || "Message could not be sent.");
     }
+
+    showStatus("Message sent successfully. Thank you!", "ok");
+    form.reset();
+
+    form.querySelectorAll("[aria-invalid]").forEach(function (field) {
+      field.removeAttribute("aria-invalid");
+    });
 
   } catch (error) {
     console.error("Form submission error:", error);
@@ -175,11 +181,12 @@ form.addEventListener("submit", async function (event) {
       "Unable to send your message. Please try again or email " + EMAIL + ".",
       "error"
     );
+  } finally {
+    sendButton.disabled = false;
+    sendButton.textContent = "Send Message";
   }
-
-  sendButton.disabled = false;
-  sendButton.textContent = "Send Message";
 });
+
 
 
 // ---------- 7. Copyright year ----------
