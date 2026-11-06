@@ -87,113 +87,113 @@ tabs.forEach(function (tab) {
 
 // ---------- Contact Form Submission ----------
 
-const form = document.getElementById("form");
-const statusMessage = document.getElementById("formStatus");
-const sendButton = form.querySelector('button[type="submit"]');
+// const form = document.getElementById("form");
+// const statusMessage = document.getElementById("formStatus");
+// const sendButton = form.querySelector('button[type="submit"]');
 
-const EMAIL = "sauravgaudel064@gmail.com";
+// const EMAIL = "sauravgaudel064@gmail.com";
 
-function showStatus(message, type = "") {
-  statusMessage.textContent = message;
-  statusMessage.className = type;
-}
+// function showStatus(message, type = "") {
+//   statusMessage.textContent = message;
+//   statusMessage.className = type;
+// }
 
-function formIsValid() {
-  let valid = true;
+// function formIsValid() {
+//   let valid = true;
 
-  const fields = [
-    form.elements.name,
-    form.elements.email,
-    form.elements.subject,
-    form.elements.message
-  ];
+//   const fields = [
+//     form.elements.name,
+//     form.elements.email,
+//     form.elements.subject,
+//     form.elements.message
+//   ];
 
-  fields.forEach(function (field) {
-    const errorBox = field.parentElement.querySelector(".err");
-    let message = "";
+//   fields.forEach(function (field) {
+//     const errorBox = field.parentElement.querySelector(".err");
+//     let message = "";
 
-    if (field.value.trim() === "") {
-      message = "This field is required.";
-    } else if (
-      field.name === "email" &&
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim())
-    ) {
-      message = "Enter a valid email address.";
-    }
+//     if (field.value.trim() === "") {
+//       message = "This field is required.";
+//     } else if (
+//       field.name === "email" &&
+//       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim())
+//     ) {
+//       message = "Enter a valid email address.";
+//     }
 
-    errorBox.textContent = message;
-    field.setAttribute("aria-invalid", message !== "");
+//     errorBox.textContent = message;
+//     field.setAttribute("aria-invalid", message !== "");
 
-    if (message !== "") {
-      valid = false;
-    }
-  });
+//     if (message !== "") {
+//       valid = false;
+//     }
+//   });
 
-  return valid;
-}
+//   return valid;
+// }
 
-form.addEventListener("submit", async function (event) {
-  event.preventDefault();
+// form.addEventListener("submit", async function (event) {
+//   event.preventDefault();
 
-  if (!formIsValid()) {
-    showStatus("Please fix the highlighted fields.", "error");
-    return;
-  }
+//   if (!formIsValid()) {
+//     showStatus("Please fix the highlighted fields.", "error");
+//     return;
+//   }
 
-  // Honeypot spam protection
-  if (form.elements._honey.value !== "") {
-    return;
-  }
+//   // Honeypot spam protection
+//   if (form.elements._honey.value !== "") {
+//     return;
+//   }
 
-  sendButton.disabled = true;
-  sendButton.textContent = "Sending...";
-  showStatus("");
+//   sendButton.disabled = true;
+//   sendButton.textContent = "Sending...";
+//   showStatus("");
 
-  try {
-    const response = await fetch(
-      "https://formsubmit.co/ajax/" + EMAIL,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify(
-          Object.fromEntries(new FormData(form))
-        )
-      }
-    );
+//   try {
+//     const response = await fetch(
+//       "https://formsubmit.co/ajax/" + EMAIL,
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           "Accept": "application/json"
+//         },
+//         body: JSON.stringify(
+//           Object.fromEntries(new FormData(form))
+//         )
+//       }
+//     );
 
-    const result = await response.json();
+//     const result = await response.json();
 
-    if (!response.ok || String(result.success) !== "true") {
-      throw new Error(result.message || "Message could not be sent.");
-    }
+//     if (!response.ok || String(result.success) !== "true") {
+//       throw new Error(result.message || "Message could not be sent.");
+//     }
 
-    showStatus("Message sent successfully. Thank you!", "ok");
-    form.reset();
+//     showStatus("Message sent successfully. Thank you!", "ok");
+//     form.reset();
 
-    form.querySelectorAll("[aria-invalid]").forEach(function (field) {
-      field.removeAttribute("aria-invalid");
-    });
+//     form.querySelectorAll("[aria-invalid]").forEach(function (field) {
+//       field.removeAttribute("aria-invalid");
+//     });
 
-    form.querySelectorAll(".err").forEach(function (errorBox) {
-      errorBox.textContent = "";
-    });
+//     form.querySelectorAll(".err").forEach(function (errorBox) {
+//       errorBox.textContent = "";
+//     });
 
-  } catch (error) {
-    console.error("Form submission error:", error);
+//   } catch (error) {
+//     console.error("Form submission error:", error);
 
-    showStatus(
-      "Unable to send your message. Please try again or email " + EMAIL + ".",
-      "error"
-    );
+//     showStatus(
+//       "Unable to send your message. Please try again or email " + EMAIL + ".",
+//       "error"
+//     );
 
-  } finally {
-    sendButton.disabled = false;
-    sendButton.textContent = "Send Message";
-  }
-});
+//   } finally {
+//     sendButton.disabled = false;
+//     sendButton.textContent = "Send Message";
+//   }
+// });
 
 
 
