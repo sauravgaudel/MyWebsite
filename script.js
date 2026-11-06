@@ -85,17 +85,19 @@ tabs.forEach(function (tab) {
 
 
 
- // ---------- 6. Contact form ----------
+// ---------- Contact Form Submission ----------
+
 const form = document.getElementById("form");
 const statusMessage = document.getElementById("formStatus");
 const sendButton = form.querySelector('button[type="submit"]');
 
-function showStatus(text, type) {
-  statusMessage.textContent = text;
-  statusMessage.className = type || "";
+const EMAIL = "sauravgaudel064@gmail.com";
+
+function showStatus(message, type = "") {
+  statusMessage.textContent = message;
+  statusMessage.className = type;
 }
 
-// Validate form fields
 function formIsValid() {
   let valid = true;
 
@@ -122,13 +124,14 @@ function formIsValid() {
     errorBox.textContent = message;
     field.setAttribute("aria-invalid", message !== "");
 
-    if (message !== "") valid = false;
+    if (message !== "") {
+      valid = false;
+    }
   });
 
   return valid;
 }
 
-// Submit form using FormSubmit
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
@@ -137,8 +140,8 @@ form.addEventListener("submit", async function (event) {
     return;
   }
 
-  // Spam protection
-  if (form.elements._honey && form.elements._honey.value !== "") {
+  // Honeypot spam protection
+  if (form.elements._honey.value !== "") {
     return;
   }
 
@@ -174,6 +177,10 @@ form.addEventListener("submit", async function (event) {
       field.removeAttribute("aria-invalid");
     });
 
+    form.querySelectorAll(".err").forEach(function (errorBox) {
+      errorBox.textContent = "";
+    });
+
   } catch (error) {
     console.error("Form submission error:", error);
 
@@ -181,6 +188,7 @@ form.addEventListener("submit", async function (event) {
       "Unable to send your message. Please try again or email " + EMAIL + ".",
       "error"
     );
+
   } finally {
     sendButton.disabled = false;
     sendButton.textContent = "Send Message";
